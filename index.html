@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Página pessoal e portfólio de Seu Nome.">
+  <title>Seu Nome — Desenvolvedor(a)</title>
+
+  <!-- Fontes (opcional) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ================= HEADER ================= -->
+  <header class="header">
+    <nav class="nav container">
+      <a href="#inicio" class="logo">&lt;SeuNome /&gt;</a>
+
+      <button class="nav-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav-menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#inicio" class="nav-link active">Início</a></li>
+        <li><a href="#sobre" class="nav-link">Sobre</a></li>
+        <li><a href="#habilidades" class="nav-link">Habilidades</a></li>
+        <li><a href="#projetos" class="nav-link">Projetos</a></li>
+        <li><a href="#contato" class="nav-link">Contato</a></li>
+        <li>
+          <button id="theme-toggle" class="theme-toggle" aria-label="Alternar tema">🌙</button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ================= HERO ================= -->
+    <section id="inicio" class="hero">
+      <div class="container hero-content">
+        <div class="hero-text">
+          <p class="hero-greeting">Olá, eu sou</p>
+          <h1>Mariane</h1>
+          <p class="hero-role">Sou <span id="typed"></span><span class="cursor">|</span></p>
+          <p class="hero-desc">
+            Gosto de aprender coisas novas, mas se não me interessar no começo vou acha entediante.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#contato" class="btn btn-primary">Fale comigo</a>
+            <a href="#projetos" class="btn btn-outline">Ver projetos</a>
+          </div>
+
+          <ul class="social">
+            <li><a href="https://github.com/seuusuario" target="_blank" rel="noopener">GitHub</a></li>
+            <li><a href="https://linkedin.com/in/seuusuario" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><a href="mailto:seuemail@exemplo.com">E-mail</a></li>
+          </ul>
+        </div>
+
+        <div class="hero-avatar">
+          <div class="avatar">
+            <img src="oikawa.imagem.jfif" alt="Foto minha">
+            <!-- Para usar uma foto, troque a linha acima por:
+                 <img src="foto.jpg" alt="Foto de Seu Nome"> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SOBRE ================= -->
+    <section id="sobre" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title reveal">Sobre mim</h2>
+
+        <div class="about-grid">
+          <div class="reveal">
+            <p>
+              Sou estudante do 1º ano.
+              Comecei a programar por curiosidade e por querer testar algumas coisas novas.
+            </p>
+            <p>
+             eu aprendi do zero como mexer em um computador, não digo que sou 
+             boa mas comparado ao começo estou bem melhor.
+            </p>
+          </div>
+
+          <ul class="info-card reveal">
+            <li><strong>Nome:</strong> Mariane da Costa</li>
+            <li><strong>Idade:</strong> 15 anos</li>
+            <li><strong>Localização:</strong> Nova Laranjeiras, Brasil</li>
+            <li><strong>Formação:</strong> Desenvolvimento de Sistemas / CEEP</li>
+            <li><strong>E-mail:</strong> mariane.da.costa@escola.pr.gov.br</li>
+          </ul>
+        </div>
+      </div>
+
+    <!-- ================= PROJETOS ================= -->
+    <section id="projetos" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title reveal">Projetos</h2>
+
+        <div class="projects">
+          <article class="project-card reveal">
+            <h3>Projeto Um</h3>
+            <p>Descrição curta do projeto: o que ele faz, qual problema resolve e o que você aprendeu construindo.</p>
+            <ul class="tags">
+              <li>HTML</li><li>CSS</li><li>JavaScript</li>
+            </ul>
+            <a href="#" class="project-link" target="_blank" rel="noopener">Ver projeto →</a>
+          </article>
+
+          <article class="project-card reveal">
+            <h3>Projeto Dois</h3>
+            <p>Descrição curta do projeto: o que ele faz, qual problema resolve e o que você aprendeu construindo.</p>
+            <ul class="tags">
+              <li>React</li><li>API</li>
+            </ul>
+            <a href="#" class="project-link" target="_blank" rel="noopener">Ver projeto →</a>
+          </article>
+
+          <article class="project-card reveal">
+            <h3>Projeto Três</h3>
+            <p>Descrição curta do projeto: o que ele faz, qual problema resolve e o que você aprendeu construindo.</p>
+            <ul class="tags">
+              <li>Node.js</li><li>CSS</li>
+            </ul>
+            <a href="#" class="project-link" target="_blank" rel="noopener">Ver projeto →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CONTATO ================= -->
+    <section id="contato" class="section">
+      <div class="container contact">
+        <h2 class="section-title reveal">Vamos conversar?</h2>
+        <p class="reveal">
+          Estou aberto(a) a oportunidades, freelances e boas conversas sobre tecnologia.
+          Me chama em qualquer um dos canais abaixo.
+        </p>
+
+        <ul class="contact-links reveal">
+          <li><a href="mailto:seuemail@exemplo.com" class="btn btn-primary">✉️ Enviar e-mail</a></li>
+          <li><a href="https://github.com/seuusuario" target="_blank" rel="noopener" class="btn btn-outline">GitHub</a></li>
+          <li><a href="https://linkedin.com/in/seuusuario" target="_blank" rel="noopener" class="btn btn-outline">LinkedIn</a></li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <p>© <span id="year"></span> Seu Nome. Feito com HTML, CSS e JavaScript.</p>
+  </footer>
+
+  <!-- Botão voltar ao topo -->
+  <button id="back-to-top" class="back-to-top" aria-label="Voltar ao topo">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
